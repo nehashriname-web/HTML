@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Web Design & Development</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<nav>
+  <h2 class="logo">WebCourse</h2>
+  <ul>
+    <li>Home</li>
+    <li>About</li>
+    <li>Course</li>
+    <li>Contact</li>
+  </ul>
+</nav>
+
+<section class="hero">
+  <h1>Web Design & Development</h1>
+  <p>Learn HTML and CSS and build beautiful websites</p>
+  <a href="#contact">
+    <button>JOin Now</button>
+  </a>
+</section>
+
+<section class="about">
+  <h2>About Course</h2>
+  <p>
+    Web design focuses on how a website looks.
+    Web development focuses on how a website works.
+    In this course you will learn HTML and CSS basics.
+  </p>
+</section>
+
+<section class="services">
+  <h2>What You Will Learn</h2>
+  <div class="cards">
+    <div class="card">HTML Basics</div>
+    <div class="card">CSS Styling</div>
+    <div class="card">Layouts</div>
+    <div class="card">Responsive Design</div>
+  </div>
+</section>
+
+<section class="login" id="contact">
+  <div id="loginBox">
+    <h2>Login</h2>
+    <input id="user" type="text" placeholder="Username">
+    <input id="pass" type="password" placeholder="Password">
+    <button onclick="login()">Login</button>
+  </div>
+
+  <h3 id="welcome" style="display:none;">
+    Welcome! You are logged in ✅
+  </h3>
+</section>
+
+<footer>
+  <p>Contact: example@email.com</p>
+</footer>
+<script>
+function login() {
+  var u = document.getElementById("user").value;
+  var p = document.getElementById("pass").value;
+
+  if(u !== "" && p !== "") {
+    document.getElementById("loginBox").style.display = "none";
+    document.getElementById("welcome").style.display = "block";
+  } else {
+    alert("Please enter username and password");
+  }
+}
+</script>
+</body>
+</html>

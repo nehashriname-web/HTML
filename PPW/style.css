@@ -1,0 +1,74 @@
+html{
+    scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  font-family: Arial;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  background: #111;
+  color: white;
+  padding: 15px 30px;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+}
+
+.hero {
+  text-align: center;
+  padding: 80px 20px;
+  background: linear-gradient(to right, #ff7a18, #ffb347);
+  color: white;
+}
+
+.hero button {
+  padding: 10px 20px;
+  border: none;
+  background: black;
+  color: white;
+  border-radius: 5px;
+}
+
+.about, .services, .login {
+  padding: 40px 20px;
+  text-align: center;
+}
+
+.cards {
+  display: grid;
+  grid-template-columns: repeat(2, 150px);
+  gap: 15px;
+  justify-content: center;
+}
+
+.card {
+  background: #f2f2f2;
+  padding: 20px;
+  border-radius: 8px;
+  font-weight: bold;
+}
+
+.login input {
+  display: block;
+  margin: 10px auto;
+  padding: 10px;
+  width: 200px;
+}
+
+.login button {
+  padding: 10px 20px;
+}
+
+footer {
+  background: #111;
+  color: white;
+  text-align: center;
+  padding: 15px;
+}
